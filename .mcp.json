@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fiscal-fr": {
+      "type": "http",
+      "url": "https://kalifa.happykiller.net/mcp",
+      "headers": {
+        "Authorization": "Bearer change-me"
+      }
+    }
+  }
+}
