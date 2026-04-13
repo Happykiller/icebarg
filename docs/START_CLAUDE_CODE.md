@@ -1,13 +1,19 @@
 # Demarrage — Claude Code (CLI / desktop)
 
-## 1. Ouvrir le dossier du plugin
+## 1. Cloner le repository
 
-- Ouvrir votre dossier local qui contient `fiscal-fr`.
-- Ouvrir le fichier `fiscal-fr/.mcp.json`.
+Depuis un terminal :
+
+```bash
+git clone https://github.com/Happykiller/icebarg
+cd icebarg
+```
+
+Puis ouvrir le fichier `.mcp.json` a la racine du repo clone.
 
 ## 2. Renseigner votre token (obligatoire)
 
-Dans `fiscal-fr/.mcp.json`, remplacer uniquement `change-me` par votre token :
+Dans `.mcp.json`, remplacer uniquement `change-me` par votre token :
 
 ```json
 "Authorization": "Bearer <votre-token>"
@@ -55,11 +61,11 @@ Ne modifiez pas l'URL MCP si elle est deja renseignee (`https://kalifa.happykill
 ## 3. Lancer Claude Code
 
 - Ouvrir un terminal.
-- Se placer dans le dossier parent de `fiscal-fr`.
+- Se placer dans le dossier `icebarg` (racine du repo clone).
 - Executer :
 
 ```bash
-claude --plugin-dir ./fiscal-fr
+claude --plugin-dir .
 ```
 
 ## 4. Verifier que le plugin est actif
