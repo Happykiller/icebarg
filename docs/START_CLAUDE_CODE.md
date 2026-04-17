@@ -9,11 +9,16 @@ git clone https://github.com/Happykiller/icebarg
 cd icebarg
 ```
 
-Puis ouvrir le fichier `.mcp.json` a la racine du repo clone.
+## 2. Créer votre fichier de configuration MCP (obligatoire)
 
-## 2. Renseigner votre token (obligatoire)
+Le fichier `.mcp.json` n'est pas versionné (il contient vos credentials).
+Créez-le à partir du modèle fourni :
 
-Dans `.mcp.json`, remplacer uniquement `change-me` par votre token :
+```bash
+cp .mcp.json.example .mcp.json
+```
+
+Puis ouvrir `.mcp.json` et remplacer `<YOUR_TOKEN>` par votre token :
 
 ```json
 "Authorization": "Bearer <votre-token>"
@@ -26,7 +31,7 @@ Comment obtenir le token — deux méthodes au choix :
 1. Ouvrir dans un navigateur : `https://kalifa.happykiller.net/token-portal`
 2. Saisir votre email et mot de passe.
 3. Copier le token affiché (bouton "Copier le token").
-4. Coller ce token à la place de `change-me` dans `.mcp.json`.
+4. Coller ce token à la place de `<YOUR_TOKEN>` dans `.mcp.json`.
 
 **Méthode B — Requête API (terminal / script)**
 

@@ -1,6 +1,7 @@
 # AGENTS.md
 
-Ce fichier décrit les agents du plugin Claude Code `fiscal-fr` et les conventions de rédaction.
+Ce fichier décrit les agents du plugin `fiscal-fr` et les conventions de rédaction.
+Il s'applique à tous les agents IA (Claude, Gemini, Codex, etc.) qui interagissent avec ce dépôt.
 
 ## Sources de vérité documentaire
 
@@ -9,7 +10,7 @@ Pour éviter les écarts entre produit, implémentation et agents, appliquer cet
 1. `README.md` : référence fonctionnelle (périmètre utilisateur, cas couverts, limites).
 2. `docs/roadmaps/PLAN_IMPLEMENTATION_MVP.md` : référence d'exécution MVP (phases, statut DONE|PARTIAL|TODO, reste à faire).
    `docs/roadmaps/PLAN_IMPLEMENTATION_MATURITE.md` : référence d'exécution post-MVP (lots de maturité).
-3. `assets/AGENT_IMPLEMENTATION_GUIDE.md` : aide pratique pour créer/faire évoluer un agent Claude.
+3. `assets/AGENT_IMPLEMENTATION_GUIDE.md` : aide pratique pour créer/faire évoluer un agent IA.
 4. `assets/MCP_CONSUMER_INTERFACE_CONTRACT.md` : contrat d'interface MCP à respecter côté plugin (outils, payloads, erreurs, séquence d'appel).
 
 Quand le périmètre fonctionnel change, mettre à jour **README + plan** dans la même PR.

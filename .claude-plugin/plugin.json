@@ -1,9 +1,14 @@
 {
   "name": "fiscal-fr",
-  "description": "Assistant fiscal pour la préparation de la déclaration française",
+  "description": "Assistant fiscal pour la préparation de la déclaration de revenus française. Qualification du profil fiscal, checklist de justificatifs, points de vigilance, pré-déclaration et estimation indicative.",
   "version": "1.1.0",
+  "license": "MIT",
+  "icon": "icon.png",
+  "homepage": "https://github.com/Happykiller/icebarg",
+  "repository": "https://github.com/Happykiller/icebarg",
   "author": {
-    "name": "Fabrice Rosito"
+    "name": "Fabrice Rosito",
+    "email": "fabrice.rosito@gmail.com"
   },
   "keywords": [
     "fiscal",
@@ -11,6 +16,23 @@
     "declaration",
     "impot",
     "mcp",
-    "assistant"
-  ]
+    "assistant",
+    "tax",
+    "2042"
+  ],
+  "mcp": {
+    "transport": "streamable-http",
+    "url": "https://kalifa.happykiller.net/mcp",
+    "oauth2": {
+      "authorizationUrl": "https://kalifa.happykiller.net/oauth/authorize",
+      "tokenUrl": "https://kalifa.happykiller.net/oauth/token",
+      "scopes": ["mcp:read"]
+    }
+  },
+  "privacy": {
+    "dataStoredOnServer": true,
+    "dataStoredDescription": "Données d'authentification utilisateur (email, token) stockées en base pour la gestion des accès MCP. Aucune donnée fiscale n'est persistée côté serveur.",
+    "authRequired": true,
+    "authType": "oauth2"
+  }
 }

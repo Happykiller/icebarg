@@ -137,3 +137,14 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+.codex
+.claude/
+
+# Symlinks agent-agnostiques (pointent vers AGENTS.md)
+CLAUDE.md
+GEMINI.md
+CODEX.md
+
+# MCP local config (contient des credentials — ne jamais commiter)
+.mcp.json
