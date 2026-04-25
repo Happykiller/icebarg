@@ -1,5 +1,7 @@
 # fiscal-fr — Assistant fiscal conversationnel (France)
 
+![Hero](assets/fimadesk.webp)
+
 `fiscal-fr` est un plugin d'assistance a la preparation de declaration de revenus francaise.
 
 Convention de documentation: le contenu est redige en francais. Quand utile pour l'alignement produit/technique, les tags anglais sont conserves entre parentheses.
