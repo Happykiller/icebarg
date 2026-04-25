@@ -43,6 +43,45 @@ If authentication is missing or invalid:
 - HTTP `401`
 - `WWW-Authenticate` header is returned
 
+## Authentication Provisioning (Operator View)
+
+For local/operator provisioning, authentication records are stored in MongoDB.
+
+Supported repository commands:
+- `npm run seed:auth` to reseed the full auth dataset from `scripts/seeds/*.json`
+- `npm run create:user` to create a single interactive user without wiping existing records
+
+The interactive command prompts for:
+- `email`
+- `userId` (defaults to the email)
+- `active` flag
+- generated password displayed after creation
+
+### Self-Service Token Portal
+
+The HTTP server exposes a self-service portal for operators to obtain a long-lived Bearer token without CLI access:
+
+- `GET /token-portal` — renders a login form (HTML)
+- `POST /token-portal` — authenticates with email/password and issues a token valid for 365 days
+
+Default response: HTML page displaying the token and a ready-to-use Claude Code MCP configuration snippet.
+
+Programmatic (JSON) response — send `Accept: application/json`:
+
+```http
+POST /token-portal
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+email=user@example.com&password=secret
+```
+
+```json
+{ "token": "<bearer-token>" }
+```
+
+Tokens issued by this portal are stored in MongoDB (`apiKeys` collection) and can be revoked by disabling the user or the key.
+
 ## Exposed OAuth Discovery and Flow Endpoints
 
 - `GET /.well-known/oauth-authorization-server`

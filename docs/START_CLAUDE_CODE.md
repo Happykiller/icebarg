@@ -1,13 +1,24 @@
 # Demarrage — Claude Code (CLI / desktop)
 
-## 1. Ouvrir le dossier du plugin
+## 1. Cloner le repository
 
-- Ouvrir votre dossier local qui contient `fiscal-fr`.
-- Ouvrir le fichier `fiscal-fr/.mcp.json`.
+Depuis un terminal :
 
-## 2. Renseigner votre token (obligatoire)
+```bash
+git clone https://github.com/Happykiller/icebarg
+cd icebarg
+```
 
-Dans `fiscal-fr/.mcp.json`, remplacer uniquement `change-me` par votre token :
+## 2. Créer votre fichier de configuration MCP (obligatoire)
+
+Le fichier `.mcp.json` n'est pas versionné (il contient vos credentials).
+Créez-le à partir du modèle fourni :
+
+```bash
+cp .mcp.json.example .mcp.json
+```
+
+Puis ouvrir `.mcp.json` et remplacer `<YOUR_TOKEN>` par votre token :
 
 ```json
 "Authorization": "Bearer <votre-token>"
@@ -20,7 +31,7 @@ Comment obtenir le token — deux méthodes au choix :
 1. Ouvrir dans un navigateur : `https://kalifa.happykiller.net/token-portal`
 2. Saisir votre email et mot de passe.
 3. Copier le token affiché (bouton "Copier le token").
-4. Coller ce token à la place de `change-me` dans `.mcp.json`.
+4. Coller ce token à la place de `<YOUR_TOKEN>` dans `.mcp.json`.
 
 **Méthode B — Requête API (terminal / script)**
 
@@ -55,11 +66,11 @@ Ne modifiez pas l'URL MCP si elle est deja renseignee (`https://kalifa.happykill
 ## 3. Lancer Claude Code
 
 - Ouvrir un terminal.
-- Se placer dans le dossier parent de `fiscal-fr`.
+- Se placer dans le dossier `icebarg` (racine du repo clone).
 - Executer :
 
 ```bash
-claude --plugin-dir ./fiscal-fr
+claude --plugin-dir .
 ```
 
 ## 4. Verifier que le plugin est actif

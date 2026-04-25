@@ -4,9 +4,11 @@ Ouvrir Claude : [https://claude.ai](https://claude.ai).
 
 ## 1. Recuperer le fichier des competences
 
-Au prealable, recuperer le fichier zip des competences :
+Au prealable, recuperer le fichier zip des competences disponible dans le dossier `delivery/` du repository :
 
-[`delivery/fisk-assistant_1.0.0.zip`](../delivery/fisk-assistant_1.0.0.zip)
+[`delivery/`](../delivery/)
+
+Télécharger le fichier `.zip` correspondant à la version la plus récente.
 
 ## 2. Importer la competence
 
