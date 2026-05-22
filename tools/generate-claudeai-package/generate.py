@@ -8,7 +8,7 @@ Usage : python3 claude/claude-code/skills/generate-claudeai-package/generate.py
 Ce script :
   1. Vérifie que les 3 fichiers source existent dans claude/claudeai/
   2. Lit la version depuis VERSION (ou fallback date du jour)
-  3. Crée dist/fiscal-fr-claudeai-vX.Y.Z.zip
+  3. Crée claude/claudeai/fiscal-fr-claudeai-vX.Y.Z.zip (tracké git)
   4. Affiche checksum SHA256 + instructions
 """
 
@@ -33,7 +33,7 @@ def _find_project_root() -> Path:
 
 PROJECT_ROOT = _find_project_root()
 DIST_DIR     = PROJECT_ROOT / "claude" / "claudeai"
-OUTPUT_DIR   = PROJECT_ROOT / "dist"
+OUTPUT_DIR   = PROJECT_ROOT / "claude" / "claudeai"
 
 REQUIRED_FILES = ["SKILL.md", "REFERENCE.md", "README.md"]
 

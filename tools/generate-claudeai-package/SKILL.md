@@ -94,7 +94,7 @@ python3 tools/generate-claudeai-package/generate.py
 
 Ce script :
 1. Vérifie que les 3 fichiers existent dans `claude/claudeai/`
-2. Crée `dist/fiscal-fr-claudeai-vX.Y.Z.zip`
+2. Crée `claude/claudeai/fiscal-fr-claudeai-vX.Y.Z.zip` (tracké git)
 3. Affiche le checksum SHA256 du ZIP
 4. Affiche les instructions de distribution
 
@@ -103,7 +103,7 @@ Ce script :
 À la fin, affiche un résumé structuré :
 
 ```
-✅ Package généré : dist/fiscal-fr-claudeai-vX.Y.Z.zip  (gitignored)
+✅ Package généré : claude/claudeai/fiscal-fr-claudeai-vX.Y.Z.zip
 📦 Contenu :
    - SKILL.md      (XXX lignes) — orchestrateur
    - REFERENCE.md  (XXX lignes) — barèmes fiscaux

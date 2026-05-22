@@ -150,6 +150,5 @@ CODEX.md
 .mcp.json
 !codex/plugin/.mcp.json
 
-# Livrables générés localement (zips Claude.ai)
-dist/
+# Anciens dossiers de livraison (obsolètes)
 delivery/
