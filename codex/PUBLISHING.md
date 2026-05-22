@@ -5,9 +5,11 @@ Ce dossier contient le candidat de publication Codex marketplace du plugin `fisc
 ## Structure
 
 ```text
-publication/codex-store/
-  .agents/plugins/marketplace.json
-  plugins/fiscal-fr/
+codex/
+  PUBLISHING.md                   (ce fichier)
+  SUBMISSION_CHECKLIST.md
+  CHANGELOG.md
+  plugin/
     .codex-plugin/plugin.json
     .mcp.json
     README.md
@@ -17,6 +19,8 @@ publication/codex-store/
     skills/fiscal-fr/
       SKILL.md
       REFERENCE.md
+
+.agents/plugins/marketplace.json  (registry marketplace local, racine repo)
 ```
 
 ## Etat publication
@@ -43,16 +47,21 @@ Reste a confirmer avant soumission publique :
 Verifier les JSON :
 
 ```powershell
-Get-Content .\publication\codex-store\.agents\plugins\marketplace.json | ConvertFrom-Json
-Get-Content .\publication\codex-store\plugins\fiscal-fr\.codex-plugin\plugin.json | ConvertFrom-Json
-Get-Content .\publication\codex-store\plugins\fiscal-fr\.mcp.json | ConvertFrom-Json
+Get-Content .\codex\plugin\.codex-plugin\plugin.json | ConvertFrom-Json
+Get-Content .\codex\plugin\.mcp.json | ConvertFrom-Json
+Get-Content .\.agents\plugins\marketplace.json | ConvertFrom-Json
 ```
 
-Verifier l'absence de token avec un scan adapte a votre environnement :
+```bash
+python3 -c "import json; json.load(open('codex/plugin/.codex-plugin/plugin.json')); print('OK')"
+python3 -c "import json; json.load(open('codex/plugin/.mcp.json')); print('OK')"
+python3 -c "import json; json.load(open('.agents/plugins/marketplace.json')); print('OK')"
+```
 
-```powershell
-Get-ChildItem .\publication\codex-store -Recurse -File -Force |
-  Select-String -Pattern '<motifs de secrets a verifier>'
+Verifier l'absence de token :
+
+```bash
+grep -r "Bearer\|token\|secret\|password" codex/plugin/ --include="*.json" --include="*.md"
 ```
 
 ## Notes de securite

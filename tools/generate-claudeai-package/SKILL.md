@@ -38,14 +38,14 @@ Extrais de ces lectures :
 ## Étape 2 — Lire les templates
 
 ```bash
-cat .claude/skills/generate-claudeai-package/TEMPLATES.md
+cat tools/generate-claudeai-package/TEMPLATES.md
 ```
 
 Utilise ces templates comme base structurelle pour chaque fichier output.
 
 ## Étape 3 — Générer les trois fichiers
 
-### 3a. dist/claudeai/SKILL.md
+### 3a. claude/claudeai/SKILL.md
 
 Génère ce fichier en remplissant le template SKILL avec :
 - La liste réelle des outils MCP et leurs descriptions exactes
@@ -60,7 +60,7 @@ Règles impératives pour la Skill :
 - Toujours inclure un disclaimer de non-responsabilité en fin de réponse fiscale
 - Langue : français, ton professionnel mais accessible
 
-### 3b. dist/claudeai/REFERENCE.md
+### 3b. claude/claudeai/REFERENCE.md
 
 Génère ce fichier en combinant :
 - Les barèmes et plafonds trouvés dans le projet
@@ -77,7 +77,7 @@ Structure obligatoire :
 ## Sources officielles
 ```
 
-### 3c. dist/claudeai/README.md
+### 3c. claude/claudeai/README.md
 
 Génère le guide d'installation utilisateur final :
 - 3 étapes maximum, pas de jargon technique
@@ -89,11 +89,11 @@ Génère le guide d'installation utilisateur final :
 ## Étape 4 — Packager en ZIP
 
 ```bash
-python3 .claude/skills/generate-claudeai-package/generate.py
+python3 tools/generate-claudeai-package/generate.py
 ```
 
 Ce script :
-1. Vérifie que les 3 fichiers existent dans `dist/claudeai/`
+1. Vérifie que les 3 fichiers existent dans `claude/claudeai/`
 2. Crée `dist/fiscal-fr-claudeai-vX.Y.Z.zip`
 3. Affiche le checksum SHA256 du ZIP
 4. Affiche les instructions de distribution
@@ -103,7 +103,7 @@ Ce script :
 À la fin, affiche un résumé structuré :
 
 ```
-✅ Package généré : dist/fiscal-fr-claudeai-vX.Y.Z.zip
+✅ Package généré : dist/fiscal-fr-claudeai-vX.Y.Z.zip  (gitignored)
 📦 Contenu :
    - SKILL.md      (XXX lignes) — orchestrateur
    - REFERENCE.md  (XXX lignes) — barèmes fiscaux

@@ -27,17 +27,17 @@ Notre vision s'articule autour de trois axes fondamentaux que chaque agent doit 
 
 Le plugin s'appuie sur :
 - un orchestrateur (skill `assistant-fiscal`),
-- des agents spécialisés (dossier `agents/`),
+- des agents spécialisés (dossier `claude/claude-code/agents/`),
 - une configuration MCP (`.mcp.json`) qui connecte les tools fiscaux.
 
 ## Emplacement des agents
 
-Chaque agent spécialisé vit dans `agents/<nom-agent>.md`.
+Chaque agent spécialisé vit dans `claude/claude-code/agents/<nom-agent>.md`.
 
 Exemple actuel :
-- `agents/tax-qualifier.md`
-- `agents/documents-checklist.md`
-- `agents/review-points.md`
+- `claude/claude-code/agents/tax-qualifier.md`
+- `claude/claude-code/agents/documents-checklist.md`
+- `claude/claude-code/agents/review-points.md`
 
 ## Contrat d'un agent
 
@@ -66,7 +66,7 @@ Chaque fichier agent doit inclure :
 
 ## Orchestration attendue
 
-Le skill `skills/assistant-fiscal/SKILL.md` pilote les interactions utilisateur.
+Le skill `claude/claude-code/skills/assistant-fiscal/SKILL.md` pilote les interactions utilisateur.
 
 Pour la qualification fiscale, l'orchestrateur doit s'appuyer sur `tax-qualifier` avant de conclure.
 Pour la phase justificatifs, l'orchestrateur doit s'appuyer sur `documents-checklist` apres appel de `list_supporting_documents`.
@@ -85,7 +85,7 @@ L'orchestrateur doit suivre le fil conversationnel cible :
 
 ## Ajouter un nouvel agent
 
-1. Créer `agents/<nouvel-agent>.md`.
+1. Créer `claude/claude-code/agents/<nouvel-agent>.md`.
 2. Définir un rôle spécialisé et non redondant.
 3. Décrire explicitement les limites et cas hors périmètre.
 4. Définir un format de sortie clair et stable.

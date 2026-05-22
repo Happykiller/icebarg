@@ -2,7 +2,7 @@
 
 Ce document aide à créer ou faire évoluer un agent dans `fiscal-fr`.
 
-Contexte repo : ce dépôt contient le plugin Claude (skills/agents/commands/docs) et la configuration MCP, pas le code source du serveur MCP.
+Contexte repo : ce dépôt contient le plugin Claude (`claude/claude-code/` — skills, agents, commands) et la configuration MCP, pas le code source du serveur MCP.
 
 ## 1) Lire avant d'écrire
 
@@ -16,7 +16,7 @@ Avant toute modification d'agent :
 
 ## 2) Contrat minimum d'un agent
 
-Chaque fichier `agents/<nom-agent>.md` doit contenir :
+Chaque fichier `claude/claude-code/agents/<nom-agent>.md` doit contenir :
 
 - frontmatter YAML : `name`, `description`, `tools`, `model`,
 - section `Mission`,
@@ -45,7 +45,7 @@ Autres règles :
 
 Quand un nouvel agent est ajouté :
 
-- vérifier si `skills/assistant-fiscal/SKILL.md` doit l'appeler,
+- vérifier si `claude/claude-code/skills/assistant-fiscal/SKILL.md` doit l'appeler,
 - documenter le moment d'appel dans le flux conversationnel,
 - éviter les chevauchements de responsabilité entre agents.
 
