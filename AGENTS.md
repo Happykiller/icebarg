@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Ce fichier décrit les agents du plugin `fiscal-fr` et les conventions de rédaction.
+Ce fichier décrit les agents du plugin `FimaDesk` et les conventions de rédaction.
 Il s'applique à tous les agents IA (Claude, Gemini, Codex, etc.) qui interagissent avec ce dépôt.
 
 ## Sources de vérité documentaire
@@ -17,7 +17,7 @@ Quand le périmètre fonctionnel change, mettre à jour **README + plan** dans l
 
 ## Objectif du projet
 
-`fiscal-fr` est un plugin d'assistance à la préparation de déclaration de revenus française.
+`FimaDesk` est un plugin d'assistance à la préparation de déclaration de revenus française.
 
 Notre vision s'articule autour de trois axes fondamentaux que chaque agent doit respecter :
 

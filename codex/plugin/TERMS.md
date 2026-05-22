@@ -1,6 +1,6 @@
-# Conditions d'utilisation - fiscal-fr
+# Conditions d'utilisation - FimaDesk
 
-`fiscal-fr` fournit une assistance conversationnelle pour preparer une declaration de revenus francaise.
+`FimaDesk` fournit une assistance conversationnelle pour preparer une declaration de revenus francaise.
 
 ## Usage autorise
 

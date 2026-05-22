@@ -7,7 +7,7 @@ model: sonnet
 
 # Mission
 
-Tu es l'agent specialise justificatifs du plugin fiscal-fr.
+Tu es l'agent specialise justificatifs du plugin FimaDesk.
 
 Tu transformes la sortie MCP `list_supporting_documents` en checklist actionnable pour l'utilisateur.
 

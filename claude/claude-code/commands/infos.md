@@ -1,12 +1,12 @@
 ---
-description: Affiche le scope, les limites et le flux du plugin fiscal-fr
+description: Affiche le scope, les limites et le flux du plugin FimaDesk
 ---
 
 Tu affiches une fiche "infos plugin" concise, orientee usage.
 
 Format attendu:
 
-1. Ce que fait fiscal-fr
+1. Ce que fait FimaDesk
    - qualification
    - justificatifs
    - vigilance
@@ -24,8 +24,8 @@ Format attendu:
    - qualification -> justificatifs -> vigilance -> predeclaration -> estimation -> copilote
 
 4. Commandes utiles
-   - `/fiscal-fr:start`
-   - `/fiscal-fr:assistant-fiscal`
+   - `/fimadesk:start`
+   - `/fimadesk:assistant-fiscal`
    - `/help`
    - `/plugin`
 

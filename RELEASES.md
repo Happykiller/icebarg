@@ -1,4 +1,4 @@
-# Releases — fiscal-fr
+# Releases — FimaDesk
 
 Tracker des versions publiées par cible de distribution.
 

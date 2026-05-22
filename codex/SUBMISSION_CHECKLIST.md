@@ -1,12 +1,12 @@
-# Checklist de soumission - fiscal-fr
+# Checklist de soumission - FimaDesk
 
 ## Package
 
 - [x] Dossier de publication separe de l'existant Claude.
 - [x] Manifeste Codex present : `codex/plugin/.codex-plugin/plugin.json`.
 - [x] Marketplace local de publication present : `.agents/plugins/marketplace.json`.
-- [x] Skill autonome present : `codex/plugin/skills/fiscal-fr/SKILL.md`.
-- [x] Reference embarquee presente : `codex/plugin/skills/fiscal-fr/REFERENCE.md`.
+- [x] Skill autonome present : `codex/plugin/skills/FimaDesk/SKILL.md`.
+- [x] Reference embarquee presente : `codex/plugin/skills/FimaDesk/REFERENCE.md`.
 - [x] Icone presente : `codex/plugin/icon.png`.
 
 ## Securite

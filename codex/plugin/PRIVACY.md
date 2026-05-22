@@ -1,6 +1,6 @@
-# Politique de confidentialite - fiscal-fr
+# Politique de confidentialite - FimaDesk
 
-`fiscal-fr` est un plugin d'assistance a la preparation de declaration de revenus francaise.
+`FimaDesk` est un plugin d'assistance a la preparation de declaration de revenus francaise.
 
 ## Donnees traitees
 
@@ -31,7 +31,7 @@ Les donnees d'authentification et les traitements cote serveur dependent de l'in
 
 ## Limites
 
-`fiscal-fr` ne remplace pas un expert-comptable, un avocat fiscaliste ou l'administration fiscale.
+`FimaDesk` ne remplace pas un expert-comptable, un avocat fiscaliste ou l'administration fiscale.
 Les estimations sont indicatives et non opposables.
 
 ## Contact

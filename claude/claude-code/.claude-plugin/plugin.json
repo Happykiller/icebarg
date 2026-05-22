@@ -1,6 +1,6 @@
 {
-  "name": "fiscal-fr",
-  "description": "Assistant fiscal pour la préparation de la déclaration de revenus française. Qualification du profil fiscal, checklist de justificatifs, points de vigilance, pré-déclaration et estimation indicative.",
+  "name": "fimadesk",
+  "description": "FimaDesk — Votre assistant fiscal français. Qualification du profil fiscal, arbitrages, checklist de justificatifs, points de vigilance, pré-déclaration et estimation indicative.",
   "version": "1.1.0",
   "license": "MIT",
   "icon": "icon.png",

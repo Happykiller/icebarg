@@ -8,7 +8,7 @@ Usage : python3 claude/claude-code/skills/generate-claudeai-package/generate.py
 Ce script :
   1. Vérifie que les 3 fichiers source existent dans claude/claudeai/
   2. Lit la version depuis VERSION (ou fallback date du jour)
-  3. Crée claude/claudeai/fiscal-fr-claudeai-vX.Y.Z.zip (tracké git)
+  3. Crée claude/claudeai/fimadesk-vX.Y.Z.zip (tracké git)
   4. Affiche checksum SHA256 + instructions
 """
 
@@ -155,7 +155,7 @@ def validate_reference_md() -> list[str]:
 def build_zip(version: str) -> Path:
     """Crée le ZIP et retourne son chemin."""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    zip_name = f"fiscal-fr-claudeai-v{version}.zip"
+    zip_name = f"fimadesk-v{version}.zip"
     zip_path = OUTPUT_DIR / zip_name
 
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
@@ -169,7 +169,7 @@ def build_zip(version: str) -> Path:
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
-    print("\n🔧 fiscal-fr — Générateur de package Claude.ai")
+    print("\n🔧 FimaDesk — Générateur de package Claude.ai")
     print("=" * 52)
 
     # 1. Vérifier les sources

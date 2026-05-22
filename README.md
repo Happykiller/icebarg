@@ -1,12 +1,12 @@
-# fiscal-fr — Assistant fiscal conversationnel (France)
+# FimaDesk — Votre assistant fiscal français
 
-`fiscal-fr` est un plugin d'assistance a la preparation de declaration de revenus francaise.
+FimaDesk est un plugin d'assistance a la preparation de declaration de revenus francaise.
 
 Convention de documentation: le contenu est redige en francais. Quand utile pour l'alignement produit/technique, les tags anglais sont conserves entre parentheses.
 
 ## Vision
 
-Notre vision pour l'assistant fiscal s'articule autour de trois axes fondamentaux :
+Notre vision pour FimaDesk s'articule autour de trois axes fondamentaux :
 
 1.  **Assister** : L'assistant doit aider, guider et accompagner le déclarant dans sa démarche de déclaration de revenus. La valeur de cet axe est de rendre simple une procédure administrative intrinsèquement complexe.
 2.  **Conseiller** : Grâce à son expertise, l'assistant aide le déclarant à obtenir le maximum de ses droits. La valeur de cet axe est monétaire : par ses questions, suggestions et études, l'assistant permet d'obtenir un résultat optimisé, souvent meilleur que si le déclarant agissait seul.

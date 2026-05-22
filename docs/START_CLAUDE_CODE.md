@@ -79,7 +79,7 @@ claude --plugin-dir ./claude/claude-code
 /help
 ```
 
-Le skill doit apparaitre : `/fiscal-fr:assistant-fiscal`.
+Le skill doit apparaitre : `/fimadesk:assistant-fiscal`.
 
 Verification du connecteur MCP :
 
@@ -96,7 +96,7 @@ Si les commandes n'apparaissent pas :
 ## 5. Demarrer l'assistant fiscal
 
 ```text
-/fiscal-fr:assistant-fiscal
+/fimadesk:assistant-fiscal
 ```
 
 Ou directement en langage naturel :
@@ -108,10 +108,10 @@ Je suis celibataire, salarie. Aide-moi a preparer ma declaration.
 ## Commandes utiles
 
 ```text
-/fiscal-fr:assistant-fiscal [mode]
-/fiscal-fr:start [mode]
-/fiscal-fr:help
-/fiscal-fr:infos
+/fimadesk:assistant-fiscal [mode]
+/fimadesk:start [mode]
+/fimadesk:help
+/fimadesk:infos
 ```
 
 ## Note developpement

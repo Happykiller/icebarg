@@ -1,6 +1,6 @@
-# fiscal-fr pour Codex
+# FimaDesk pour Codex
 
-Package Codex marketplace du plugin `fiscal-fr`.
+Package Codex marketplace du plugin `FimaDesk`.
 
 Ce dossier est volontairement separe du plugin Claude Code existant afin de limiter les regressions sur les fichiers historiques du depot.
 
@@ -8,8 +8,8 @@ Ce dossier est volontairement separe du plugin Claude Code existant afin de limi
 
 - `.codex-plugin/plugin.json` : manifeste Codex marketplace.
 - `.mcp.json` : connexion au serveur MCP fiscal externe, sans token embarque.
-- `skills/fiscal-fr/SKILL.md` : skill utilisateur autonome, adapte depuis le package Claude.ai.
-- `skills/fiscal-fr/REFERENCE.md` : references fiscales et points a confirmer.
+- `skills/FimaDesk/SKILL.md` : skill utilisateur autonome, adapte depuis le package Claude.ai.
+- `skills/FimaDesk/REFERENCE.md` : references fiscales et points a confirmer.
 - `icon.png` : icone du plugin.
 
 ## Connexion MCP

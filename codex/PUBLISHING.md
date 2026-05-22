@@ -1,6 +1,6 @@
-# Publication Codex Store - fiscal-fr
+# Publication Codex Store - FimaDesk
 
-Ce dossier contient le candidat de publication Codex marketplace du plugin `fiscal-fr`.
+Ce dossier contient le candidat de publication Codex marketplace du plugin `FimaDesk`.
 
 ## Structure
 
@@ -16,7 +16,7 @@ codex/
     PRIVACY.md
     TERMS.md
     icon.png
-    skills/fiscal-fr/
+    skills/FimaDesk/
       SKILL.md
       REFERENCE.md
 

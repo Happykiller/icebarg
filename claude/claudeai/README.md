@@ -1,6 +1,6 @@
-# Assistant fiscal français pour Claude.ai
+# FimaDesk — Votre assistant fiscal français pour Claude.ai
 
-Cet assistant t'aide à comprendre et optimiser ta situation fiscale française
+FimaDesk t'aide à comprendre et optimiser ta situation fiscale française
 directement dans Claude.ai.
 
 **Version :** 1.1.0 — **Mis à jour :** 22 mai 2026
@@ -13,7 +13,7 @@ directement dans Claude.ai.
 
 1. Dans Claude.ai, clique sur ton avatar → **Paramètres** → **Personnaliser** → **Compétences**
 2. Clique **Téléverser une compétence**
-3. Sélectionne le fichier `fiscal-fr-claudeai-v1.1.0.zip`
+3. Sélectionne le fichier `fimadesk-v1.1.0.zip`
 4. La compétence apparaît dans ta liste ✅
 
 ### Étape 2 — Connecter le serveur de calcul (MCP)
@@ -25,7 +25,7 @@ Le connecteur permet d'activer les calculs fiscaux déterministes (qualification
    ```
    https://kalifa.happykiller.net/mcp
    ```
-3. Donne-lui le nom `Fiscal FR` et clique **Ajouter**
+3. Donne-lui le nom `FimaDesk` et clique **Ajouter**
 4. Claude.ai ouvre une fenêtre d'autorisation OAuth2 — connecte-toi avec ton email et mot de passe
 5. Clique **Autoriser** → le connecteur passe au statut ✅ Connecté
 

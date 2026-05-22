@@ -6,7 +6,7 @@ argument-hint: [qualification|justificatifs|vigilance|predeclaration|estimation|
 Le mode demande est: `$ARGUMENTS`.
 
 Objectif:
-- Lancer l'utilisateur rapidement dans le bon mode fiscal-fr.
+- Lancer l'utilisateur rapidement dans le bon mode FimaDesk.
 
 Instructions:
 1. Si `$ARGUMENTS` est vide ou invalide, utiliser `qualification`.

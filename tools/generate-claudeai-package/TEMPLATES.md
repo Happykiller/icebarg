@@ -9,13 +9,13 @@ Remplace tous les placeholders `{{...}}` avec les données extraites du projet.
 
 ```markdown
 ---
-name: fiscal-fr
-description: "Assistant fiscal français : calcul IR, optimisation PER, Pinel, frais réels. Active-toi pour toute question sur impôts, déclaration, défiscalisation ou optimisation fiscale."
+name: fimadesk
+description: "FimaDesk — Votre assistant fiscal français : calcul IR, optimisation PER, Pinel, frais réels. Active-toi pour toute question sur impôts, déclaration, défiscalisation ou optimisation fiscale."
 version: {{VERSION}}
 updated: {{DATE_ISO}}
 ---
 
-# Assistant fiscal français
+# FimaDesk — Votre assistant fiscal français
 
 Tu es un assistant spécialisé en fiscalité française pour les particuliers.
 Tu aides à comprendre, calculer et optimiser la situation fiscale de l'utilisateur.
@@ -132,7 +132,7 @@ Indique à l'utilisateur comment connecter le MCP pour des calculs automatisés.
 ## Template README.md
 
 ```markdown
-# Assistant fiscal français pour Claude.ai
+# FimaDesk — Votre assistant fiscal français pour Claude.ai
 
 Cet assistant t'aide à comprendre et optimiser ta situation fiscale française
 directement dans Claude.ai.
@@ -149,7 +149,7 @@ directement dans Claude.ai.
    ```
    {{MCP_URL}}
    ```
-4. Donne-lui le nom `Fiscal FR` et clique **Ajouter**
+4. Donne-lui le nom `FimaDesk` et clique **Ajouter**
 
 > 💡 **Plan Free ?** Tu as droit à 1 connecteur personnalisé.
 > L'assistant fonctionne aussi sans connecteur (calculs manuels),
@@ -159,7 +159,7 @@ directement dans Claude.ai.
 
 1. Dans **Paramètres** → **Personnaliser** → **Compétences**
 2. Clique **Téléverser une compétence**
-3. Sélectionne le fichier `fiscal-fr-claudeai-{{VERSION}}.zip`
+3. Sélectionne le fichier `fimadesk-claudeai-{{VERSION}}.zip`
 4. La compétence apparaît dans ta liste ✅
 
 ### Étape 3 — Tester l'installation

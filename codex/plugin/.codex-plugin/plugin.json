@@ -1,7 +1,7 @@
 {
-  "name": "fiscal-fr",
-  "version": "1.0.0",
-  "description": "Assistant fiscal pour la preparation de la declaration de revenus francaise, connecte a un serveur MCP fiscal externe.",
+  "name": "fimadesk",
+  "version": "1.1.0",
+  "description": "FimaDesk — Votre assistant fiscal français. Qualification, arbitrages, justificatifs, vigilance, pre-declaration, estimation. Connecte au serveur MCP fiscal externe.",
   "author": {
     "name": "Fabrice Rosito",
     "email": "fabrice.rosito@gmail.com",
@@ -23,9 +23,9 @@
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "Fiscal FR",
-    "shortDescription": "Assistant fiscal francais connecte a un MCP externe.",
-    "longDescription": "Fiscal FR accompagne la preparation d'une declaration de revenus francaise : qualification, arbitrages, justificatifs, points de vigilance, pre-declaration, estimation indicative et copilote de saisie. Les decisions fiscales deterministes restent fournies par le serveur MCP fiscal externe avec connexion OAuth2.",
+    "displayName": "FimaDesk",
+    "shortDescription": "Votre assistant fiscal français connecté à un MCP externe.",
+    "longDescription": "FimaDesk accompagne la préparation de votre déclaration de revenus française : qualification, arbitrages, justificatifs, points de vigilance, pré-déclaration, estimation indicative et copilote de saisie. Les décisions fiscales déterministes sont fournies par le serveur MCP externe via OAuth2.",
     "developerName": "Fabrice Rosito",
     "category": "Productivity",
     "capabilities": [

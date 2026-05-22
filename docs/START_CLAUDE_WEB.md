@@ -1,72 +1,52 @@
-# Demarrage — Claude.ai web
+# Demarrage — FimaDesk sur Claude.ai web
 
 Ouvrir Claude : [https://claude.ai](https://claude.ai).
 
-## 1. Recuperer le fichier des competences
+Le guide d'installation complet est inclus dans le livrable : `claude/claudeai/README.md`.
 
-Au prealable, recuperer le fichier zip des competences disponible dans le dossier `delivery/` du repository :
+## Résumé en 2 étapes
 
-[`delivery/`](../delivery/)
+### 1. Installer la compétence
 
-Télécharger le fichier `.zip` correspondant à la version la plus récente.
+- Paramètres → Personnaliser → Compétences → Téléverser une compétence
+- Sélectionner `claude/claudeai/fimadesk-v1.1.0.zip`
+- La compétence **FimaDesk** apparaît dans la liste ✅
 
-## 2. Importer la competence
+### 2. Connecter le serveur MCP (OAuth2)
 
-- Dans le menu de gauche, cliquer sur `Personaliser`.
-- Ouvrir le sous-menu `Competences`.
-- Cliquer sur `+`, puis `Creer une competence`, puis `Televerser une competence`.
-- Dans la fenetre qui s'ouvre, selectionner le fichier zip des competences telecharge au prealable.
+- Paramètres → Connecteurs → Ajouter un connecteur personnalisé
+- URL : `https://kalifa.happykiller.net/mcp`
+- Nom : `FimaDesk`
+- Claude.ai ouvre une fenêtre OAuth2 → se connecter → Autoriser ✅
 
-La competence `fisk-assistant` apparait alors dans la liste des competences.
+## Démarrer FimaDesk
 
-## 3. Ajouter le connecteur MCP
-
-- Retourner dans le menu de gauche sur `Connecteurs`.
-- Cliquer sur `+`, puis `Ajouter un connecteur personnalise`.
-- Indiquer un nom (par exemple `Assistant Fiscal`).
-- Indiquer l'URL MCP :
+Dans une nouvelle conversation :
 
 ```
-https://kalifa.happykiller.net/mcp
+Je suis célibataire, salarié. Aide-moi à préparer ma déclaration.
 ```
 
-- Dans la liste des connecteurs, choisir `Assistant Fiscal`.
-- Cliquer sur `Se connecter` : cela ouvre la page d'authentification de l'assistant fiscal.
-
-## 4. S'authentifier
-
-- Utiliser l'identifiant et le mot de passe fournis par l'administrateur (Fabrice).
-- Valider avec `Autoriser`.
-- En cas de succes, retour automatique sur Claude.ai.
-
-Tout est pret. Vous pouvez demarrer l'assistant fiscal dans une nouvelle conversation.
-
-Exemple :
+## Exemples de démarrage
 
 ```
-Je suis celibataire, salarie. Aide-moi a preparer ma declaration.
-```
-
-## Exemples de demarrage
-
-```
-Qualifie ma situation fiscale
+Lance le mode qualification fiscale
 ```
 ```
-Compare mes options fiscales (PFU vs bareme, frais reels vs 10%)
+Compare mes options fiscales (PFU vs barème, frais réels vs 10%)
 ```
 ```
-Liste les justificatifs a reunir pour ma declaration
+Liste les justificatifs à réunir pour ma déclaration
 ```
 ```
-Detecte les points de vigilance dans mon dossier
+Détecte les points de vigilance dans mon dossier
 ```
 ```
-Prepare une pre-declaration avec mes montants
+Prépare une pré-déclaration avec mes montants
 ```
 ```
-Estime mon impot sur le revenu 2026
+Estime mon impôt sur le revenu 2026
 ```
 ```
-Guide-moi ecran par ecran sur impots.gouv.fr
+Guide-moi écran par écran sur impots.gouv.fr
 ```
