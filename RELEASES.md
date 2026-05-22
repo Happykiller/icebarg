@@ -6,7 +6,7 @@ Tracker des versions publiées par cible de distribution.
 
 | Cible | Dossier source | Livrable |
 |-------|---------------|---------|
-| **Claude Code** | Racine du repo (`.claude-plugin/`, `skills/`, `agents/`, `commands/`) | Installation directe via CLI |
+| **Claude Code** | `claude/claude-code/` (`.claude-plugin/`, `skills/`, `agents/`, `commands/`) | `claude --plugin-dir ./claude/claude-code` |
 | **Claude.ai** (web) | `claude/claudeai/` | ZIP généré dans `dist/` (gitignored), uploadé dans Claude.ai > Personnaliser > Compétences |
 | **Codex** | `codex/plugin/` | Soumission store Codex via `.agents/plugins/marketplace.json` |
 
@@ -22,7 +22,9 @@ Pour générer le package Claude.ai : invoquer le skill `/generate-claudeai-pack
 ## Procédure de release
 
 ### Claude Code
-Installation directe depuis ce repository — pas de zip à générer.
+```bash
+claude --plugin-dir ./claude/claude-code
+```
 La commande `/start` déclenche le skill `assistant-fiscal`.
 
 ### Claude.ai

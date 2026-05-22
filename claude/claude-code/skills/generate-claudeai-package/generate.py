@@ -2,7 +2,7 @@
 """
 generate.py — Packager le livrable Claude.ai de fiscal-fr
 
-Usage : python3 .claude/skills/generate-claudeai-package/generate.py
+Usage : python3 claude/claude-code/skills/generate-claudeai-package/generate.py
         (à appeler depuis la racine du projet)
 
 Ce script :
@@ -22,7 +22,16 @@ from pathlib import Path
 
 # ── Config ──────────────────────────────────────────────────────────────────
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]   # fiscal-fr/
+def _find_project_root() -> Path:
+    """Remonte l'arbre jusqu'à trouver VERSION (marqueur racine projet)."""
+    p = Path(__file__).resolve().parent
+    for _ in range(8):
+        if (p / "VERSION").exists():
+            return p
+        p = p.parent
+    raise RuntimeError("Racine projet introuvable (VERSION absent)")
+
+PROJECT_ROOT = _find_project_root()
 DIST_DIR     = PROJECT_ROOT / "claude" / "claudeai"
 OUTPUT_DIR   = PROJECT_ROOT / "dist"
 

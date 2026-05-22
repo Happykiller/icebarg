@@ -12,10 +12,10 @@ cd icebarg
 ## 2. Créer votre fichier de configuration MCP (obligatoire)
 
 Le fichier `.mcp.json` n'est pas versionné (il contient vos credentials).
-Créez-le à partir du modèle fourni :
+Créez-le à partir du modèle fourni dans le dossier plugin :
 
 ```bash
-cp .mcp.json.example .mcp.json
+cp claude/claude-code/.mcp.json.example .mcp.json
 ```
 
 Puis ouvrir `.mcp.json` et remplacer `<YOUR_TOKEN>` par votre token :
@@ -70,7 +70,7 @@ Ne modifiez pas l'URL MCP si elle est deja renseignee (`https://kalifa.happykill
 - Executer :
 
 ```bash
-claude --plugin-dir .
+claude --plugin-dir ./claude/claude-code
 ```
 
 ## 4. Verifier que le plugin est actif
