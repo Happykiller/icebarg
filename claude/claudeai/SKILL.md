@@ -1,7 +1,7 @@
 ---
 name: fiscal-fr
-description: "Assistant fiscal français : qualification IR, arbitrages PFU/frais réels, justificatifs, pré-déclaration, estimation indicative, copilote saisie. Active-toi pour toute question sur impôts, déclaration ou défiscalisation."
-version: 1.0.0
+description: "Assistant fiscal français : qualification IR, arbitrages PFU/frais réels, justificatifs, pré-déclaration, estimation et copilote saisie. Active sur toute question impôts ou déclaration."
+version: 1.1.0
 updated: 2026-05-22
 ---
 

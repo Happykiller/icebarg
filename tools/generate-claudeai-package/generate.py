@@ -43,14 +43,18 @@ MCP_URL = "https://kalifa.happykiller.net/mcp"
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
 def get_version() -> str:
-    """Lit la version depuis package.json, sinon demande."""
+    """Lit la version depuis VERSION, sinon package.json, sinon date du jour."""
+    ver_file = PROJECT_ROOT / "VERSION"
+    if ver_file.exists():
+        v = ver_file.read_text().strip()
+        if v:
+            return v
     pkg = PROJECT_ROOT / "package.json"
     if pkg.exists():
         try:
             return json.loads(pkg.read_text())["version"]
         except (KeyError, json.JSONDecodeError):
             pass
-    # Fallback : date du jour
     return date.today().strftime("%Y.%m.%d")
 
 
