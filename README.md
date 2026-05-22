@@ -2,11 +2,7 @@
 
 ![Hero](assets/fimadesk.webp)
 
-<<<<<<< HEAD
 FimaDesk est un plugin d'assistance a la preparation de declaration de revenus francaise.
-=======
-`fiscal-fr` est un plugin d'assistance a la preparation de declaration de revenus francaise.
->>>>>>> 6736a028191914a2673a98f5b5c5155f1c8ee9b8
 
 Convention de documentation: le contenu est redige en francais. Quand utile pour l'alignement produit/technique, les tags anglais sont conserves entre parentheses.
 
