@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "fiscal-fr": {
+    "fimadesk": {
       "type": "http",
       "url": "https://kalifa.happykiller.net/mcp",
       "oauth2": {

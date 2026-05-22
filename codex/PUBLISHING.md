@@ -16,12 +16,16 @@ codex/
     PRIVACY.md
     TERMS.md
     icon.png
-    skills/FimaDesk/
+    skills/fimadesk/
       SKILL.md
       REFERENCE.md
+assets/
+  icon.png                         (source logo)
 
 .agents/plugins/marketplace.json  (registry marketplace local, racine repo)
 ```
+
+Le logo source est `assets/icon.png`. Le fichier `codex/plugin/icon.png` est la copie embarquee dans le package Codex, referencee par le manifeste.
 
 ## Etat publication
 

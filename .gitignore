@@ -152,3 +152,6 @@ CODEX.md
 
 # Anciens dossiers de livraison (obsolètes)
 delivery/
+
+# Config locale agents (générée par l'outil, ne pas commiter)
+.agents/plugins/marketplace.json
