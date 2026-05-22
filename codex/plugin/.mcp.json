@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "fiscal-fr": {
+      "type": "http",
+      "url": "https://kalifa.happykiller.net/mcp",
+      "oauth2": {
+        "authorizationUrl": "https://kalifa.happykiller.net/oauth/authorize",
+        "tokenUrl": "https://kalifa.happykiller.net/oauth/token",
+        "scopes": [
+          "mcp:read"
+        ]
+      }
+    }
+  }
+}

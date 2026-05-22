@@ -6,8 +6,8 @@ Usage : python3 .claude/skills/generate-claudeai-package/generate.py
         (à appeler depuis la racine du projet)
 
 Ce script :
-  1. Vérifie que les 3 fichiers source existent dans dist/claudeai/
-  2. Lit la version depuis package.json (ou fallback manuel)
+  1. Vérifie que les 3 fichiers source existent dans claude/claudeai/
+  2. Lit la version depuis VERSION (ou fallback date du jour)
   3. Crée dist/fiscal-fr-claudeai-vX.Y.Z.zip
   4. Affiche checksum SHA256 + instructions
 """
@@ -23,7 +23,7 @@ from pathlib import Path
 # ── Config ──────────────────────────────────────────────────────────────────
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]   # fiscal-fr/
-DIST_DIR     = PROJECT_ROOT / "dist" / "claudeai"
+DIST_DIR     = PROJECT_ROOT / "claude" / "claudeai"
 OUTPUT_DIR   = PROJECT_ROOT / "dist"
 
 REQUIRED_FILES = ["SKILL.md", "REFERENCE.md", "README.md"]
@@ -162,7 +162,7 @@ def main():
     # 1. Vérifier les sources
     missing = check_sources()
     if missing:
-        print(f"\n❌ Fichiers manquants dans dist/claudeai/ :")
+        print(f"\n❌ Fichiers manquants dans claude/claudeai/ :")
         for f in missing:
             print(f"   • {f}")
         print("\n💡 Lance d'abord la Skill : /generate-claudeai-package")

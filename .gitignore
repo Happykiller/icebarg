@@ -148,3 +148,8 @@ CODEX.md
 
 # MCP local config (contient des credentials — ne jamais commiter)
 .mcp.json
+!codex/plugin/.mcp.json
+
+# Livrables générés localement (zips Claude.ai)
+dist/
+delivery/

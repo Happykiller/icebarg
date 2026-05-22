@@ -1,0 +1,47 @@
+{
+  "name": "fiscal-fr",
+  "version": "1.0.0",
+  "description": "Assistant fiscal pour la preparation de la declaration de revenus francaise, connecte a un serveur MCP fiscal externe.",
+  "author": {
+    "name": "Fabrice Rosito",
+    "email": "fabrice.rosito@gmail.com",
+    "url": "https://github.com/Happykiller"
+  },
+  "homepage": "https://github.com/Happykiller/icebarg",
+  "repository": "https://github.com/Happykiller/icebarg",
+  "license": "MIT",
+  "keywords": [
+    "fiscal",
+    "france",
+    "declaration",
+    "impot",
+    "mcp",
+    "assistant",
+    "tax",
+    "2042"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Fiscal FR",
+    "shortDescription": "Assistant fiscal francais connecte a un MCP externe.",
+    "longDescription": "Fiscal FR accompagne la preparation d'une declaration de revenus francaise : qualification, arbitrages, justificatifs, points de vigilance, pre-declaration, estimation indicative et copilote de saisie. Les decisions fiscales deterministes restent fournies par le serveur MCP fiscal externe avec connexion OAuth2.",
+    "developerName": "Fabrice Rosito",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "MCP"
+    ],
+    "websiteURL": "https://github.com/Happykiller/icebarg",
+    "privacyPolicyURL": "https://github.com/Happykiller/icebarg/blob/main/codex/plugin/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/Happykiller/icebarg/blob/main/codex/plugin/TERMS.md",
+    "brandColor": "#2563EB",
+    "composerIcon": "icon.png",
+    "logo": "icon.png",
+    "defaultPrompt": [
+      "Lance le mode qualification fiscale.",
+      "Liste mes justificatifs fiscaux.",
+      "Guide-moi dans ma declaration."
+    ]
+  }
+}
